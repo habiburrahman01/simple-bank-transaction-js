@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Welcome to World bank E-Banking</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-5xl text-center mt-16  ">
+            Welcome to World bank <span class="text-pink-800">E-Banking </span> !!!
+        </h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <!-- balance and transaction -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white ">
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4  class="text-4xl">$ <span id="deposit-total">0  </span> </h4>
+                </div>
+                <div class="bg-blue-300 p-8 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                
+                    <h4 class="text-4xl">$<span id="withdraw-total">0  </span> </h4>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-4xl">$<span id="balance-total">1240  </span> </h4>
+                </div>
+            </div>
+           
+        </section>
+        <!-- deposite and Withdraw -->
+        <section class="mt-8">
+            <div class="grid-cols-2 gap-4">
+                <h3 class="text-3xl">Please Deposit</h3>
+          
+                <div class="mt-8 bg-indigo-300 p-8">
+                    <label class="block ml-32 text-2xl mb-2">Deposit Amount</label>
+                    <input id="deposit-amount" class="block border-gray-400 rounded-3xl w-3/4 ml-32 pl-5 mb-5 h-10" type="text" placeholder="Enter $ amount you want to deposit"/>
+                    <button id="deposit-btn" class=" ml-32 bg-green-200 p-2 border-2 border-green-200 rounded-2xl" type="submit">Deposit</button>
+                </div>
+            </div>
+            <div class="grid-cols-2 gap-4 mt-8">
+                <h3 class="text-3xl">Please Enter Withdraw Amount</h3>
+          
+                <div class="mt-8 bg-purple-300 p-8">
+                    <label class="block ml-32 text-2xl mb-2">Withdraw Amount</label>
+                    <input id="withdraw-amount" class="block border-gray-400 rounded-3xl w-3/4 ml-32 pl-5 mb-5 h-10" type="text" placeholder="Enter $ amount you want to deposit"/>
+                    <button id="withdraw-btn" class=" ml-32 bg-green-200 p-2 border-2 border-green-200 rounded-2xl" type="submit">Withdraw</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+<script src="js/banking.js"></script>
+</body>
+</html>
