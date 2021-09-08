@@ -35,7 +35,7 @@
             
             const balance=document.getElementById('balance-total')
             const previousbalance=balance.innerText
-            currentBalance =parseFloat(previousbalance) + parseFloat(newwithdrawAmount)
+            currentBalance =parseFloat(previousbalance) - parseFloat(newwithdrawAmount)
             balance.innerText=currentBalance
     
          
